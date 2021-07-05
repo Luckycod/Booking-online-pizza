@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-family: "Montserrat", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1505826759037-406b40feb4cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.banner__content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner__text{
+    width: 50rem;
+}
+
+.banner__text h3{
+    font-size: 5rem;
+}
+
+.banner__text h1{
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 800;
+}
+
+.banner__text p{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar__text{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 40%;
+}
+
+#logo__name{
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.navbar__ul{
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.banner__btn{
+    margin-top: 3.5rem;
+}
+
+.btn{
+    text-decoration: none;
+    border: none;
+    padding: 2rem 4rem;
+    outline: none;
+    font-weight: 700;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.btn_smart{
+    background: rgb(255, 69, 79);
+}
+
+
+/* ==================about================== */
+
+.about{
+    padding: 8rem 0;
+}
+
+.p-25{
+    padding: 4.5rem;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.about h3{
+    color: rgba(37, 37, 0, 7);
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.about h1{
+    font-size: 4rem;
+    color: #252525;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p{
+    color: #8b8b8b;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.about__btn{
+    margin-top: 4.5rem;
+}
+
+.about__img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.about__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================shop================== */
+
+.shop{
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1602658015057-c17cd1f324f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+    height: 45rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop__text{
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.shop__text h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+    font-style: normal;
+    letter-spacing: .5px;
+}
+
+.shop__btn{
+    margin-top: 4.5rem;
+}
+
+/* ======================Clients================= */
+
+.clients{
+    width: 100%;
+    padding: 10rem 0;
+    background: url("https://images.unsplash.com/photo-1597511502996-b02dc3e98628?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.client{
+    text-align: center;
+}
+
+.client h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.client p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
 }
